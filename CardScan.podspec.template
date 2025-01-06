@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CardScan'
-  s.version          = '{{version}}'
+  s.version          = '1.0.5'  # Replace with actual version number
   s.summary          = 'Scan credit cards'
   s.description      = <<-DESC
 CardScan is a library for scanning credit cards.
@@ -9,10 +9,8 @@ CardScan is a library for scanning credit cards.
   s.homepage         = 'https://cardscan.io'
   s.license          = { :type => 'Custom', :file => 'LICENSE' }
   s.author           = { 'Sam King' => 'kingst@gmail.com' }
-  s.source           = { :git => 'https://github.com/getbouncer/cardscan-ios.git', :tag => s.version.to_s } 
+  s.source           = { :git => 'https://github.com/0xDesolution/cardscan-ios.git', :branch => 'master' }  # Updated repository and using commit
 
-  # lint warning, who knows
-  #s.social_media_url = 'https://twitter.com/stk'
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.3.1'
   s.vendored_frameworks = 'CardScan.xcframework'
